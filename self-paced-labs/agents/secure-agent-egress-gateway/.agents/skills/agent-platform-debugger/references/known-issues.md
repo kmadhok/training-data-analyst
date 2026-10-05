@@ -418,6 +418,6 @@ Verify and expand the PSC subnet.
     ```
 3.  Describe the subnetwork to check the CIDR range:
     ```bash
-    gcloud compute networks subnetworks describe <SUBNET_NAME> --region=$LOCATION
+    gcloud compute networks subnets describe <SUBNET_NAME> --region=$LOCATION
     ```
 4.  If the subnet is small (e.g. `/28` or `/29`), it may be exhausted. Allocate a larger subnet (minimum `/26` recommended) or expand the existing one, and recreate the network attachment and gateway if necessary.

@@ -290,7 +290,7 @@ If you observe **SSL Handshake Timeouts** or **Connection Reset** in the agent l
 3.  **Inspect the Subnet**:
     Describe the subnetwork to check its IP range:
     ```bash
-    gcloud compute networks subnetworks describe SUBNET_NAME --region=$LOCATION --project=$PROJECT_ID
+    gcloud compute networks subnets describe SUBNET_NAME --region=$LOCATION --project=$PROJECT_ID
     ```
     Check the `ipCidrRange` (e.g., a `/28` subnet only has 16 IP addresses, and GCP reserves 4, leaving only 12 for resources).
 
